@@ -13,6 +13,7 @@
 #include "EspMQTTClient.h"
 #include <Wire.h>
 #include <Adafruit_ADS1X15.h>
+#include <SPI.h> // Not having this caused build to fail - dependency of ADS1X15 library? 
 
 #define poolTempPin 23
 #define chgPumpPin 17 // Shutdown pin on the 5V charge pump
